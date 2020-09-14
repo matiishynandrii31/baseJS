@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BaseJS</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+	// 1
+		let age = +prompt(`Скільки тобі років?`);
+		alert(`Тобі ${age} років!`);
+
+	// 2
+		const year = 2020;
+		const birthYear = +prompt(`Якого ти року народження?`);
+		let age1 = year - birthYear;
+		alert(`Тобі ${age1} років!`);
+
+	// 3
+		let width = +prompt(`Введіть ширину прямокутника!`);
+		let height = +prompt(`Введіть довжину прямокутника!`);
+		let perimetr = height*2 + width*2 ;
+		alert(`Периметр: ${perimetr}`);
+
+	// 4
+		let r = +prompt(`Введіть радіус кола!`);
+		let S = 2 * Math.PI * r;
+		alert(`Площа кола становить ${S} метрів квадратних`);
+
+	// 5
+		const v = 50;
+		let t = +prompt(`Скільки ще годин вам необхідно їхати?`);
+		let s = v * t;
+		alert(`Ви проїдете ${s} км`);
+
+	// 6
+		let coef = 0.6213;
+		let kilometers = +prompt(`Ввести кількість кілометрів`);
+		let x = kilometers * coef;
+		alert(`${kilometers} кілометрів = ${x} миль`);
+
+		let miles = +prompt(`Ввести кількість миль`);
+		let y = miles / coef;
+		alert(`${miles} миль = ${y} кілометрів`);
+
+	// 7
+		let money = +prompt(`Яка сума на вашому рахунку?`);
+		let price = +prompt(`Яка ціна одного літра бензину?`);
+		let amount = money / price;
+		amount = Math.trunc(amount);
+		let remainder = money - amount * price;
+		alert(`Ви можете придбати ${amount} літрів пального і у вас залишиться ${remainder} грн`);
+		
+	</script>
+</body>
+</html>
